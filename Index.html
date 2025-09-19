@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Classes Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>My Classes</h2>
+      <ul>
+        <li onclick="showTab('dashboard')">Dashboard</li>
+        <li onclick="showTab('schedule')">Schedule</li>
+        <li onclick="showTab('materials')">Materials</li>
+        <li onclick="showTab('profile')">Profile</li>
+      </ul>
+    </aside>
 
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Dashboard -->
+      <section id="dashboard" class="tab active">
+        <h1>Welcome to Your Online Classes</h1>
+        <p>Select a tab to get started.</p>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule" class="tab">
+        <h1>Today's Schedule</h1>
+        <ul class="schedule-list">
+          <li><strong>9:00 AM:</strong> Math - Algebra</li>
+          <li><strong>11:00 AM:</strong> Science - Chemistry</li>
+          <li><strong>2:00 PM:</strong> English - Literature</li>
+        </ul>
+      </section>
+
+      <!-- Materials -->
+      <section id="materials" class="tab">
+        <h1>Study Materials</h1>
+        <ul>
+          <li><a href="#">Algebra Notes (PDF)</a></li>
+          <li><a href="#">Chemistry Slides (PPT)</a></li>
+          <li><a href="#">Literature Workbook</a></li>
+        </ul>
+      </section>
+
+      <!-- Profile -->
+      <section id="profile" class="tab">
+        <h1>Your Profile</h1>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Student ID:</strong> 123456</p>
+        <p><strong>Email:</strong> john@example.com</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
